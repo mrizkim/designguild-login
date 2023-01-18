@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+}
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  background: #f8f4f2;
+  padding: 0 10%;
+}
+
+.header {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo a {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.header .form-login {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+.header .form-login .login {
+  display: grid;
+}
+
+.header .form-login .login.password {
+  position: relative;
+}
+.header .form-login .login.password a {
+  position: absolute;
+  bottom: -30px;
+  color: #3c2c20;
+
+  text-decoration: underline;
+}
+.header .form-login .login label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.header .form-login .login input {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #c1a28b;
+  background: #f8f4f2;
+}
+.header .form-login button {
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  border-radius: 8px;
+  border: none;
+  width: 175px;
+  padding: 16px;
+  color: #fff;
+}
+
+.content {
+  margin-top: 184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .content-kiri h1 {
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+.content .content-kiri p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.recent-login .box {
+  display: flex;
+  gap: 16px;
+}
+
+.content .content-kiri .recent-login p {
+  margin-bottom: 14px;
+}
+
+.recent-login .box .box-img {
+  width: 156px;
+  height: 156px;
+  border: 1px solid #c1a28b;
+  border-radius: 16px;
+}
+.recent-login .box .box-img p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.box .box-img.add {
+  background: #f1eae4;
+}
+
+.recent-login .box .box-img .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 24px auto 16px auto;
+  border-radius: 50%;
+  background-color: salmon;
+}
+.box .box-img .img.add {
+  background: #dfcfc2;
+}
+
+.box .box-img .img .bx.bx-plus {
+  font-size: 2.5rem;
+}
+
+.content-kanan h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.content-kanan p {
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+
+.login-soc {
+  display: grid;
+  justify-content: stretch;
+  width: 374px;
+  /* background-color: #3c2c20; */
+}
+
+.login-soc .sign-in {
+  padding: 16px;
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.login-soc p {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.login-soc .btn-login {
+  display: flex;
+  justify-content: space-between;
+}
+.login-soc .btn-login button {
+  width: 114px;
+  padding: 12px 0;
+  border: 1px solid #afa2c3;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 991px) {
+  bodu {
+    background-repeat: no-repeat;
+  }
+  .container {
+    height: 110vh;
+    padding: 0;
+    margin-top: 45%;
+    overflow: hidden;
+    border-radius: 20rem 20rem 0 0 / 5rem;
+  }
+  .content-kiri {
+    display: none;
+  }
+
+  .header {
+    width: 100vw;
+    position: absolute;
+    top: 5%;
+    flex-direction: column;
+    height: 120vh;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header .logo a {
+    color: #fff;
+  }
+
+  .header .form-login {
+    flex-direction: column;
+  }
+  .header .form-login .login label {
+    font-size: 1rem;
+  }
+  .header .form-login input {
+    width: 90vw;
+  }
+  .header .form-login button {
+    width: 90vw;
+  }
+  .header .form-login .login.password a {
+    right: 0;
+    margin-bottom: 10px;
+  }
+
+  .content-kanan {
+    width: 90vw;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content-kanan h2 {
+    font-size: 24px;
+  }
+  .content-kanan p {
+    font-size: 14px;
+  }
+
+  .login-soc .sign-in {
+    margin-top: -20px;
+    width: 90vw;
+  }
+  .login-soc .btn-login {
+    width: 90vw;
+  }
+  .login-soc .btn-login button {
+    width: 90px;
+  }
+}
